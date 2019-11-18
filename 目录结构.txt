@@ -1,0 +1,30 @@
+--public
+	-js
+		-vconsole.min.js	移动端调试工具
+	-index.html				html模板
+--src
+	--assets目录	静态资源目录
+		--css目录   设置全局的sass文件
+			--reset.css  	初始化样式
+			--index.scss	全局sass库
+			--mixin.scss 	sass混合器库和函数库
+			--norm.scss		sass变量库
+	--components目录	定义各个组件
+	--core目录
+		--api
+			--apis.js		定义项目中的接口请求
+			--http.js		初始化配置axios
+			--params.js		定义全局的变量
+		--global			定义全局的方法
+		--store				vuex目录
+			--index.js		vuex文件	
+		--core.config.js	注册全局组件
+		--directive.js		自定义全局指令
+		--filter.js			全局过滤器
+	-router
+		--index.js			路由文件
+	-views					组件目录
+		--Home.vue 			根组件
+	--App.vue 				入口组件
+	--main.js				主配置文件
+--vue.config.js				自定义配置vue-cli文件
